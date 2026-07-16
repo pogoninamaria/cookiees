@@ -3,6 +3,7 @@ if ('serviceWorker' in navigator) {
         .then(() => console.log('Service Worker зарегистрирован'))
         .catch(err => console.log('SW ошибка:', err));
 }
+
 setTimeout(() => {
     if (!document.querySelector('.pwa-toast')) {
         const toast = document.createElement('div');

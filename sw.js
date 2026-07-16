@@ -10,8 +10,6 @@ const urlsToCache = [
     '/sw.js',
     '/logo.png',
     '/img/cookie.png'
-	'/img/cook.png'
-	'/img/ball.gif'
 ];
 
 self.addEventListener('install', function(event) {
@@ -32,10 +30,10 @@ self.addEventListener('fetch', function(event) {
                     return response;
                 }
                 return fetch(event.request);
-            }
-        )
+            })
     );
 });
+
 self.addEventListener('notificationclick', function(event) {
     event.notification.close();
     event.waitUntil(
