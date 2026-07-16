@@ -1,25 +1,22 @@
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
-        .then((registration) => {
-            console.log('Service Worker зарегистрирован');
-            
-            Notification.requestPermission().then((perm) => {
-                if (perm === 'granted') {
-                    console.log('Разрешение на уведомления получено');
-                   
-                    setTimeout(() => {
-                        if ('serviceWorker' in navigator) {
-                            navigator.serviceWorker.ready.then((reg) => {
-                                reg.showNotification('🥠 Судьба по печенькам', {
-                                    body: 'Вы получили новое предсказание! Проверьте сайт.',
-                                    icon: 'logo.png',
-                                    vibrate: [200, 100, 200]
-                                });
-                            });
-                        }
-                    }, 3000);
-                }
-            });
-        })
+        .then(() => console.log('Service Worker зарегистрирован'))
         .catch(err => console.log('SW ошибка:', err));
 }
+setTimeout(() => {
+    if (!document.querySelector('.pwa-toast')) {
+        const toast = document.createElement('div');
+        toast.className = 'pwa-toast';
+        toast.innerHTML = `
+            <div style="display:flex; align-items:center; gap:15px;">
+                <span style="font-size:30px;">🥠</span>
+                <div>
+                    <div style="font-weight:bold; font-size:16px;">Судьба по печенькам</div>
+                    <div style="font-size:14px; color:#aaa;">Вы получили новое предсказание! Загляните в раздел «Предсказания».</div>
+                </div>
+                <button onclick="this.parentElement.parentElement.remove()" style="background:transparent; border:none; color:#00d4ff; font-size:20px; cursor:pointer;">×</button>
+            </div>
+        `;
+        document.body.appendChild(toast);
+    }
+}, 3000);
