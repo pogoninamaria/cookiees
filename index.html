@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Судьба по печенькам</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+</head>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker зарегистрирован'))
+        .catch(err => console.log('SW ошибка:', err));
+}
+</script>
+<body>
+
+<header>
+    <h1>Судьба по печенькам</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="predictions.html">Предсказания</a>
+    <a href="history.html">История</a>
+    <a href="categories.html">Категории</a>
+    <a href="wish.php">Загадай желание</a>
+</nav>
+
+<main>
+
+<h2> <p align="center">  Добро пожаловать в мир, где все ваши желания исполняются!</h2>
+
+<p align="center">
+    <img src="img/ball.gif" alt="Магический шар" width="300">
+</p>
+
+<p align="center">
+Добро пожаловать в волшебный мир предсказаний! Здесь каждое печенье хранит
+маленький секрет судьбы. Загляните в будущее, познакомьтесь с историей
+печений с предсказаниями и загадайте своё самое заветное желание.
+</p>
+
+<p align="center">
+<a class="button" href="predictions.html">🥠 Достать печенье</a>
+</p>
+
+</main>
+
+<footer>
+<p>  2026 | Судьба по печенькам | Впереди только лучшее </p>
+</footer>
+
+</body>
+</html>

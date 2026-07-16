@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Предсказания</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker зарегистрирован'))
+        .catch(err => console.log('SW ошибка:', err));
+}
+</script>
+<body>
+
+<header>
+<h1>Судьба по печенькам</h1>
+</header>
+
+<nav>
+<a href="index.html">Главная</a>
+<a href="predictions.html">Предсказания</a>
+<a href="history.html">История</a>
+<a href="categories.html">Категории</a>
+<a href="wish.php">Загадай желание</a>
+</nav>
+
+<main>
+
+<h2>Выберите печенье</h2>
+
+<p align="center">
+Наведите курсор на печенье, чтобы узнать своё предсказание.
+</p>
+
+<div class="cards">
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Сегодня вас ждёт приятный сюрприз.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Совсем скоро вам напишет старый друг.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Не бойтесь принимать новые решения.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Вас ждёт удачная покупка.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Сегодня отличный день для отдыха.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Судьба приготовила для вас подарок.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Улыбка принесёт вам удачу.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Ваши мечты начинают сбываться.</p>
+</div>
+
+<div class="fortune">
+<img src="img/cookie.png" width="120">
+<p class="secret">Доверьтесь своей интуиции.</p>
+</div>
+
+</div>
+
+</main>
+
+<footer>
+<p> 2026 | Судьба по печенькам | Впереди только лучшее </p>
+</footer>
+
+</body>
+</html>
+
+

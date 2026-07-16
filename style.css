@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background-color:#f5f0ff;
+    color:#333333;
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+}
+
+header{
+    background-color:#673ab7;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin:0;
+}
+
+h1{
+	font-family:'Cinzel',serif;
+	font-size:42px;
+	color:#ffd700;
+}
+
+h2{
+	font-family:'Cinzel',serif;
+	color:#673ab7;
+}
+
+nav{
+    background-color:#512da8;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+main{
+    width:90%;
+    margin:auto;
+    padding:20px;
+	flex:1;
+}
+
+h2{
+    text-align:center;
+    color:#512da8;
+}
+
+p{
+    line-height:1.6;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 20px;
+    background-color:#673ab7;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.button:hover{
+    background-color:#512da8;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.card{
+    width:30%;
+    background-color:white;
+    border:2px solid #673ab7;
+    margin-bottom:20px;
+    padding:15px;
+    text-align:center;
+}
+
+.columns{
+    column-count:2;
+    column-gap:30px;
+}
+
+.category{
+    background-color:white;
+    border:2px solid #673ab7;
+    margin-bottom:20px;
+    padding:20px;
+}
+
+form{
+    width:500px;
+    margin:auto;
+    background-color:white;
+    border:2px solid #673ab7;
+    padding:20px;
+}
+
+input[type="text"],
+textarea,
+select{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    font-family:inherit;
+    font-size:16px;
+}
+
+input[type="submit"]{
+    background-color:#673ab7;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:#512da8;
+}
+
+.fortune{
+    width:30%;
+    background-color:white;
+    border:2px solid #673ab7;
+    text-align:center;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.fortune img{
+    width:120px;
+}
+
+.secret{
+    display:none;
+    color:#673ab7;
+    font-weight:bold;
+}
+
+.fortune:hover .secret{
+    display:block;
+}
+
+footer{
+    background-color:#673ab7;
+    color:white;
+    text-align:center;
+    padding:15px;
+    
+}

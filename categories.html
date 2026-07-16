@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Подборка предсказаний</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+</head>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker зарегистрирован'))
+        .catch(err => console.log('SW ошибка:', err));
+}
+</script>
+<body>
+
+<header>
+    <h1>Судьба по печенькам</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="predictions.html">Предсказания</a>
+    <a href="history.html">История</a>
+    <a href="categories.html">Категории</a>
+    <a href="wish.php">Загадай желание</a>
+</nav>
+
+<main>
+
+<h2>Подборка предсказаний на сегодня:</h2>
+
+<div class="category">
+<h2>❤️ На любовь:</h2>
+
+<ul>
+<li>Совсем скоро вас ждёт романтическая встреча. — Скорпион</li>
+<li>Ваше сердце подскажет правильное решение. — Лев</li>
+<li>Любовь придёт неожиданно. — Стрелец</li>
+<li>Вас ждёт нечто волнительное. — Близнецы</li>
+</ul>
+
+</div>
+
+<div class="category">
+
+<h2>💰 На деньги:</h2>
+
+<ul>
+<li>Финансовое положение скоро улучшится. — Рыбы</li>
+<li>Не бойтесь новых возможностей. — Дева</li>
+<li>Удачная покупка принесёт радость. — Водолей</li>
+<li>Не жди в наступающем году чудес — чуди самостоятельно. — Весы </li>
+</ul>
+
+</div>
+
+<div class="category">
+
+<h2>💼 На карьеру:</h2>
+
+<ul>
+<li>Ваш труд обязательно заметят. — Рак</li>
+<li>Новые знания помогут добиться успеха. — Телец</li>
+<li>Настало время проявить инициативу. — Овен</li>
+<li>Тебя ждёт долгожданное признание твоих заслуг. — Козерог</li>
+</ul>
+
+</div>
+
+</main>
+
+<footer>
+
+<p> 2026 | Судьба по печенькам | Впереди только лучшее </p>
+
+</footer>
+
+</body>
+</html>
+
+
