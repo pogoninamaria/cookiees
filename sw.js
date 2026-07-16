@@ -9,8 +9,8 @@ const urlsToCache = [
     '/manifest.json',
     '/sw.js',
     '/logo.png',
-    '/img/cookie.png'
-	'/img/cook.png'
+    '/img/cookie.png',
+	'/img/cook.png',
 	'/img/ball.gif'
 ];
 self.addEventListener('install', function(event) {
